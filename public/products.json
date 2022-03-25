@@ -1,0 +1,56 @@
+[
+  {
+    "id": "623e283dec8e2b0d9ba7aab5",
+    "name": "iPhone 13 Pro",
+    "price": 133000,
+    "img": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-pro.jpg"
+  },
+  {
+    "id": "623e2we83dec8e2d9ba7aab5",
+    "name": "iPhone 13 Pro Max",
+    "price": 176000,
+    "img": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-pro-max.jpg"
+  },
+  {
+    "id": "623ee283dec8e2d9ba7aab5",
+    "name": "iPhone 13",
+    "price": 118000,
+    "img": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13.jpg"
+  },
+  {
+    "id": "623e283edec8e2d9ba7aab5",
+    "name": "iPhone 12 Pro Max",
+    "price": 168000,
+    "img": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-12-pro-max-.jpg"
+  },
+  {
+    "id": "623e283deec8e2d9ba7aab5",
+    "name": "iPhone 12 Pro",
+    "price": 15200,
+    "img": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-12-pro--.jpg"
+  },
+  {
+    "id": "623e283dec8e2b0dba7aab5",
+    "name": "iPhone 12",
+    "price": 112000,
+    "img": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-12.jpg"
+  },
+  {
+    "id": "623e283dec8edba7aab5",
+    "name": "iPhone SE (2020)",
+    "price": 51000,
+    "img": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-se-2020.jpg"
+  },
+  {
+    "id": "623e28s3dec8edba7aab5",
+    "name": "Galaxy S22 5G",
+    "price": 80000,
+    "img": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s22-5g.jpg"
+  },
+  {
+    "id": "623e28s3ba7aab5",
+    "name": "Galaxy S22 Ultra 5G",
+    "price": 143000,
+    "img": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s22-ultra-5g.jpg"
+  }
+]
