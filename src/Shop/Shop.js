@@ -30,7 +30,8 @@ const Shop = () => {
 
         // console.log(cart);
         const carts = cart[Math.floor(Math.random() * cart.length)];
-
+        const randomProduct = [carts];
+        setCart(randomProduct);
         console.log(carts);
 
         // const random = Math.floor(Math.random() * 10) + 1;
@@ -53,8 +54,6 @@ const Shop = () => {
             </div>
             <div className="cart-container">
 
-                <p>Selected Items: {cart.length}</p>
-
                 {
                     cart.map(item => <div key={item.id} className='d-flex align-items-center p-2'>
                         <div className='m-2 p-2 border bg-light rounded-circle'> <img src={item.img} width="30px" height="30px" alt="" /></div>
@@ -65,8 +64,8 @@ const Shop = () => {
                 }
                 <div className='d-flex flex-column'>
 
-                    <button onClick={handleChooseToClick} className='m-2 border border-3 border-dark'>Choose 1 for Me </button>
-                    <button onClick={handleClearToClick} className='m-2 border border-3 border-dark'>Choose Again </button></div>
+                    <button onClick={handleChooseToClick} className='m-2 border border-3 border-dark btn-warning'>Choose 1 for Me </button>
+                    <button onClick={handleClearToClick} className='m-2 border border-3 border-dark btn-warning'>Choose Again </button></div>
 
             </div>
 
