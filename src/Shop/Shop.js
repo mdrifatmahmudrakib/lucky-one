@@ -25,14 +25,16 @@ const Shop = () => {
     }
 
     const handleChooseToClick = () => {
-        setCart(cart);
-        console.log(cart);
-        const random = Math.floor(Math.random() * 10) + 1;
-        console.log(random);
 
+        // setCart(cart);
 
+        // console.log(cart);
+        const carts = cart[Math.floor(Math.random() * cart.length)];
 
+        console.log(carts);
 
+        // const random = Math.floor(Math.random() * 10) + 1;
+        // console.log(random);
 
 
     }
@@ -67,6 +69,11 @@ const Shop = () => {
                     <button onClick={handleClearToClick} className='m-2 border border-3 border-dark'>Choose Again </button></div>
 
             </div>
+
+
+
+
+
         </div>
     );
 };
