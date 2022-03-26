@@ -5,6 +5,7 @@ const Shop = () => {
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useState([]);
 
+
     useEffect(() => {
         fetch('products.json')
             .then(res => res.json())
@@ -15,7 +16,7 @@ const Shop = () => {
         const newCart = [...cart, product];
         // console.log(newCart);
         setCart(newCart);
-        console.log(newCart)
+        console.log(newCart);
     }
 
     const handleClearToClick = () => {
@@ -24,6 +25,15 @@ const Shop = () => {
     }
 
     const handleChooseToClick = () => {
+        setCart(cart);
+        console.log(cart);
+        const random = Math.floor(Math.random() * 10) + 1;
+        console.log(random);
+
+
+
+
+
 
     }
 
@@ -52,6 +62,7 @@ const Shop = () => {
                     )
                 }
                 <div className='d-flex flex-column'>
+
                     <button onClick={handleChooseToClick} className='m-2 border border-3 border-dark'>Choose 1 for Me </button>
                     <button onClick={handleClearToClick} className='m-2 border border-3 border-dark'>Choose Again </button></div>
 
