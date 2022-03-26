@@ -5,3 +5,7 @@
 .product-container{
     margin: 50px 20px;
 }
+
+.cart-container{
+    background-color: rgba(143, 148, 153, 0.555);
+}

@@ -3,7 +3,7 @@ import Product from '../Component/Header/Product/Product';
 import './Shop.css'
 const Shop = () => {
     const [products, setProducts] = useState([]);
-    const [cart, setCart] = useState([])
+    const [cart, setCart] = useState([]);
 
     useEffect(() => {
         fetch('products.json')
@@ -12,12 +12,20 @@ const Shop = () => {
     }, []);
 
     const handleAddToClick = (product) => {
-
-
         const newCart = [...cart, product];
+        // console.log(newCart);
         setCart(newCart);
+        console.log(newCart)
     }
 
+    const handleClearToClick = () => {
+        const clearItem = [];
+        setCart(clearItem);
+    }
+
+    const handleChooseToClick = () => {
+
+    }
 
 
     return (
@@ -32,14 +40,21 @@ const Shop = () => {
                 }
             </div>
             <div className="cart-container">
-                <h1>hello</h1>
+
                 <p>Selected Items: {cart.length}</p>
 
                 {
-                    cart.map(item => <p key={item.id} >{item.name}
-                    </p>
+                    cart.map(item => <div key={item.id} className='d-flex align-items-center p-2'>
+                        <div className='m-2 p-2 border bg-light rounded-circle'> <img src={item.img} width="30px" height="30px" alt="" /></div>
+                        <h6>{item.name}</h6>
+
+                    </div>
                     )
                 }
+                <div className='d-flex flex-column'>
+                    <button onClick={handleChooseToClick} className='m-2 border border-3 border-dark'>Choose 1 for Me </button>
+                    <button onClick={handleClearToClick} className='m-2 border border-3 border-dark'>Choose Again </button></div>
+
             </div>
         </div>
     );

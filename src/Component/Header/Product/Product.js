@@ -14,10 +14,11 @@ const Product = (props) => {
                         <h5 className="card-title">{name}</h5>
                         <p className="card-text">{price}</p>
                     </div>
-                    <button onClick={() => props.handleAddToClick(props.product)} className='d-flex justify-content-center'>
-                        <p className='mt-2 me-2'>Add to Card</p>
+                    <button onClick={() => props.handleAddToClick(props.product)} className='d-flex justify-content-center btn-warning'>
 
-                        <FontAwesomeIcon className='mt-2' icon={faShoppingCart}></FontAwesomeIcon>
+                        <p className='mt-2 me-2'>Add to Card <FontAwesomeIcon className='mt-2' icon={faShoppingCart}></FontAwesomeIcon></p>
+
+
                     </button>
 
                 </div>
